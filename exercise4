@@ -1,0 +1,43 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class queue {
+    public static void main(String[] args) {
+        Queue<String> Classmates = new LinkedList();
+
+        // Adds elements to the queue
+        Classmates.add("Christian");
+        Classmates.add("Brandon");
+        Classmates.add("Victor");
+        Classmates.add("Jap");
+        Classmates.add("Mathew");
+
+        System.out.println(Classmates);
+
+        // Removes the element at the front of the queue
+        Classmates.remove(Classmates);
+
+        // Returns the number of elements in the queue.
+        System.out.println(Classmates.size());
+
+        // Shows the element at the front of the queue
+        System.out.println(Classmates.peek());
+
+        // Display all elements of the queue.
+        System.out.println(Classmates);
+
+        //Dequeue 5 of your classmates 
+		Classmates.remove();
+		Classmates.remove();
+		Classmates.remove();
+		Classmates.remove();
+		Classmates.remove();
+        
+        //Enqueue another 5 of you classmates
+		Classmates.add("Alexander");
+		Classmates.add("Idell");
+		Classmates.add("Ivan");
+		Classmates.add("Jonnah");
+		Classmates.add("Neal");
+    }
+}
